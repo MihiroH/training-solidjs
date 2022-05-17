@@ -1,0 +1,26 @@
+{
+	"name": "rehabilitation_system_mock",
+	"version": "1.0.0",
+	"description": "",
+	"main": "gulpfile.js",
+	"scripts": {
+		"dev": "npx gulp"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/masato5579/rehabilitation_system_mock.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/masato5579/rehabilitation_system_mock/issues"
+	},
+	"homepage": "https://github.com/masato5579/rehabilitation_system_mock#readme",
+	"devDependencies": {
+		"browser-sync": "^2.27.7",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-sass": "^5.1.0",
+		"sass": "^1.49.8"
+	}
+}
