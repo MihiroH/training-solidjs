@@ -38,3 +38,4 @@ const watchFiles = () => {
 }
 
 exports.default = series(series(cssSass), parallel(watchFiles, syncFunc));
+exports.build = series(series(cssSass));
