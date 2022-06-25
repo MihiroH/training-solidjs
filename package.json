@@ -1,5 +1,5 @@
 {
-	"name": "rehabilitation_system_mock",
+	"name": "delivery-industry",
 	"version": "1.0.0",
 	"description": "",
 	"main": "gulpfile.js",
@@ -9,14 +9,8 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/masato5579/rehabilitation_system_mock.git"
+		"url": "https://github.com/MihiroH/delivery-industry"
 	},
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/masato5579/rehabilitation_system_mock/issues"
-	},
-	"homepage": "https://github.com/masato5579/rehabilitation_system_mock#readme",
 	"devDependencies": {
 		"browser-sync": "^2.27.7",
 		"gulp": "^4.0.2",

@@ -5,14 +5,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 		<script src="https://cdn.tailwindcss.com"></script>
-		<title>タイトル</title>
+		<title>スタッフ募集中!! | 配送業</title>
 	</head>
 	<body>
 		<main class="font-['Noto_Sans_JP']">
 			<!-- トップ画面 -->
 			<div
-				class="h-screen bg-cover bg-center h-screen"
+				class="h-screen bg-[length:150%] md:bg-cover bg-no-repeat bg-[#494949] bg-center h-screen"
 				style="background-image: url(/assets/images/top.png)"
 			>
 				<p
@@ -23,7 +26,7 @@
 				</p>
 			</div>
 			<!-- お問合せボタン -->
-			<a class="z-10 fixed bottom-12 right-7 lg:right-12">
+			<a href="mailto:terada.kinglove@gmail.com" class="z-10 fixed bottom-12 right-7 lg:right-12">
 				<img class="h-16 lg:h-20 w-16 lg:w-20" src="/assets/images/delivery_person_car.png" />
 				<p class="text-xs lg:text-base font-bold text-white hover:text-gray-300">お問合せ</p>
 			</a>
@@ -179,20 +182,20 @@
 				</div>
 
 			<!-- タイムライン -->
-			<div class="h-full">
+			<div>
 				<img
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="600"
 					src="/assets/images/timeline.png"
-					class="m-auto bg-center h-full bg-contain md:block hidden"
+					class="m-auto bg-center bg-contain md:block hidden"
 				/>
 				<img
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="600"
 					src="/assets/images/timeline_sp.png"
-					class="m-auto bg-center h-full bg-contain block md:hidden"
+					class="m-auto bg-center bg-contain block md:hidden"
 				/>
 			</div>
 
@@ -440,12 +443,8 @@
             data-aos="fade-up"
             data-aos-offset="300"
             class="grid grid-cols-5 gap-y-3 gap-x-7 mt-10 leading-7">
-						<div class="col-span-5 md:col-span-1 font-bold">資本金</div>
-						<div class="text-xs text-gray-300 col-span-5 md:col-span-4">@@@@@@万円</div>
-						<div class="col-span-5 md:col-span-1 font-bold">住所</div>
-						<div class="text-xs text-gray-300 col-span-5 md:col-span-4">@@@@@@@@@@@@@@@@@@@@@@</div>
 						<div class="col-span-5 md:col-span-1 font-bold">代表者氏名</div>
-						<div class="text-xs text-gray-300 col-span-5 md:col-span-4">テキストテキスト</div>
+						<div class="text-xs text-gray-300 col-span-5 md:col-span-4">立花壮太</div>
 						<div class="col-span-5 md:col-span-1 font-bold">契約手順</div>
 						<div class="col-span-5 md:col-span-4">
 							<p class="mb-3">＜①面接日程調整＞<br>
@@ -492,7 +491,7 @@
 					</div>
 					<div class="flex justify-center mt-10">
 						<a
-              href="#"
+							href="mailto:terada.kinglove@gmail.com"
               data-aos="zoom-in"
               class="rounded-md">
               <div class="border py-2 px-2 hover:bg-gray-700 hover:text-gray-300">
@@ -529,7 +528,7 @@
       <!-- お問合せボタン -->
       <div class="flex justify-center my-14">
         <a
-          href="#"
+					href="mailto:terada.kinglove@gmail.com"
           data-aos="zoom-in"
           class="rounded-md">
           <div class="border py-2 px-2 hover:bg-gray-700 hover:text-gray-300">
@@ -542,7 +541,7 @@
 
       <div class="py-8 border-t">
         <a
-          href="/privacyPolicy.html"
+          href="/privacy.html"
           class="text-center">
           <p>プライバシーポリシー</p>
         </a>
