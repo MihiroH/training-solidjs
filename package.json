@@ -5,7 +5,7 @@
 	"main": "gulpfile.js",
 	"scripts": {
 		"dev": "npx gulp",
-		"build" "npx gulp",
+		"build" "npx gulp"
 	},
 	"repository": {
 		"type": "git",
