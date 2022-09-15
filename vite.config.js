@@ -37,5 +37,10 @@ export default defineConfig({
     postcss: {
       plugins: [require('autoprefixer')],
     },
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "./src/assets/scss/styles";',
+      },
+    },
   },
 })

@@ -2,6 +2,7 @@
 import { Router } from '@solidjs/router'
 import { render } from 'solid-js/web'
 
+import '@/assets/css/reset.min.css'
 import '@/index.scss'
 import App from '@/App'
 

@@ -1,0 +1,79 @@
+// Sizes.
+$w375: 375px;
+$w1280: 1280px;
+$w1024: 1024px;
+$designSizeMobile: $w375;
+$designSizeDesktop: $w1280;
+
+// Colors.
+$white: #fff;
+$blue: #0176ff;
+$blueLight: #5ac8fa;
+$blueVeryLight: #a3e0fc;
+$purple: #9747ff;
+$purpleLight: #b984ff;
+$green: #2ac610;
+
+$baseColor: #262626;
+$mainColor: $white;
+$subColor: #f2f3f4;
+$accentColor: #408eea;
+
+// Media Query.
+@mixin mediaMobile {
+  @media only screen and (min-width: $w1024) {
+    @content;
+  }
+}
+
+@mixin mediaDesktop {
+  @media only screen and (min-width: #{$w1024 + 1}) {
+    @content;
+  }
+}
+
+// Font Family.
+@mixin fontMultiple {
+  font-family: 'Anton', 'Noto Sans JP', sans-serif;
+}
+
+@mixin fontJapanese {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+@mixin fontEnglish {
+  font-family: 'Anton', sans-serif;
+}
+
+// Utilities.
+@mixin hoverStyle {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+  @media (hover: none) {
+    &:active {
+      @content;
+    }
+  }
+}
+
+@mixin hoverOpacity {
+  @include hoverStyle {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+}
+
+@function sizeMobile($size) {
+  @return vw($size);
+}
+
+@function sizeDesktop($px) {
+  @return $px;
+}
+
+@function vw($px, $windowSize: $designSizeMobile) {
+  @return ($px / $windowSize) * 100vw;
+}
