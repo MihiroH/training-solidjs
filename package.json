@@ -40,9 +40,11 @@
     "stylelint-scss": "^4.3.0",
     "typescript": "^4.8.2",
     "vite": "^3.0.9",
+    "vite-plugin-fonts": "^0.6.0",
     "vite-plugin-solid": "^2.3.0"
   },
   "dependencies": {
+    "@solidjs/router": "^0.4.3",
     "autoprefixer": "^10.4.8",
     "sass": "^1.54.8",
     "solid-js": "^1.5.1"
