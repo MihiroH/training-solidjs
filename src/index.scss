@@ -4,6 +4,7 @@ html {
 
 body {
   @include fontJapanese;
+  color: $baseColor;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
