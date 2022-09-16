@@ -56,19 +56,16 @@
 
   @include mediaDesktop {
     padding: 8px 16px;
-  }
-
-  @include hoverStyle {
-    color: $accentColor;
-    background: $mainColor;
+    @include hoverStyle {
+      color: $accentColor;
+      background: $mainColor;
+    }
   }
 
   &:not(:first-child) {
+    margin-left: sizeMobile(8px);
     @include mediaDesktop {
       margin-left: 8px;
-    }
-    @include mediaMobile {
-      margin-left: sizeMobile(8px);
     }
   }
 }
