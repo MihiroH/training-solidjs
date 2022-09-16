@@ -21,7 +21,7 @@ $accentColor: #408eea;
 
 // Media Query.
 @mixin mediaMobile {
-  @media only screen and (min-width: $w1024) {
+  @media only screen and (max-width: $w1024) {
     @content;
   }
 }
@@ -66,8 +66,8 @@ $accentColor: #408eea;
   }
 }
 
-@function sizeMobile($size) {
-  @return vw($size);
+@function sizeMobile($px) {
+  @return vw($px);
 }
 
 @function sizeDesktop($px) {
@@ -75,5 +75,5 @@ $accentColor: #408eea;
 }
 
 @function vw($px, $windowSize: $designSizeMobile) {
-  @return ($px / $windowSize) * 100vw;
+  @return calc($px / $windowSize) * 100vw;
 }
