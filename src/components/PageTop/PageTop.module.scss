@@ -1,0 +1,32 @@
+.inner {
+  display: flex;
+  gap: sizeMobile(12px);
+  align-items: center;
+  font-size: sizeMobile(20px);
+  letter-spacing: 0.02em;
+
+  @include mediaDesktop {
+    gap: sizeDesktop(12px);
+    font-size: sizeDesktop(20px);
+  }
+}
+
+.logoL {
+  width: sizeMobile(26px);
+
+  @include mediaDesktop {
+    width: sizeDesktop(26px);
+  }
+}
+
+.logoM {
+  width: sizeMobile(23px);
+
+  @include mediaDesktop {
+    width: sizeDesktop(23px);
+  }
+}
+
+.text {
+  @include fontEnglish;
+}
