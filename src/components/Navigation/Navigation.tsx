@@ -1,12 +1,22 @@
-import { For } from 'solid-js'
+import { For, createEffect } from 'solid-js'
 
 import styles from '@/components/Navigation/Navigation.module.scss'
 import { links } from '@/constants/index'
+import { cloneDomScrollHandler } from '@/utils/handler'
 
 const Navigation = () => {
+  let navSection: HTMLDivElement | undefined
+
+  createEffect(() => {
+    navSection?.addEventListener('scroll', cloneDomScrollHandler)
+    return () => {
+      navSection?.removeEventListener('scroll', cloneDomScrollHandler)
+    }
+  })
+
   return (
     <div class={styles.navigation}>
-      <div class={styles.container}>
+      <nav class={styles.container} ref={navSection}>
         <For each={links}>
           {(link) => (
             <a href={link.URL} class={styles.item}>
@@ -14,7 +24,7 @@ const Navigation = () => {
             </a>
           )}
         </For>
-      </div>
+      </nav>
     </div>
   )
 }
