@@ -1,9 +1,9 @@
 // Sizes.
-$w375: 375px;
-$w1280: 1280px;
+$designSizeMobile: 375;
+$designSizeDesktop: 1280;
+$w375: $designSizeMobile + 'px';
+$w1280: $designSizeDesktop + 'px';
 $w1024: 1024px;
-$designSizeMobile: $w375;
-$designSizeDesktop: $w1280;
 
 // Colors.
 $white: #fff;
@@ -75,5 +75,5 @@ $accentColor: #408eea;
 }
 
 @function vw($px, $windowSize: $designSizeMobile) {
-  @return ($px / $windowSize) * 100vw;
+  @return calc($px / $windowSize) * 100vw;
 }
