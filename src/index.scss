@@ -1,5 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @include fontJapanese;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
