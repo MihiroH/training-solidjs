@@ -66,8 +66,8 @@ $accentColor: #408eea;
   }
 }
 
-@function sizeMobile($size) {
-  @return vw($size);
+@function sizeMobile($px) {
+  @return vw($px);
 }
 
 @function sizeDesktop($px) {
