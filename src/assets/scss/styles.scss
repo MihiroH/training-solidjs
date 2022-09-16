@@ -1,9 +1,9 @@
 // Sizes.
-$designSizeMobile: 375;
-$designSizeDesktop: 1280;
-$w375: $designSizeMobile + 'px';
-$w1280: $designSizeDesktop + 'px';
+$w375: 375px;
+$w1280: 1280px;
 $w1024: 1024px;
+$designSizeMobile: $w375;
+$designSizeDesktop: $w1280;
 
 // Colors.
 $white: #fff;
