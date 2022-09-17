@@ -7,7 +7,6 @@ export type PageInfo = {
     english: string
     japanese: string
   }
-  headerBackGroundImage: string
 }
 
 export const pagesInfo: Readonly<PageInfo[]> = Object.freeze([
@@ -18,7 +17,6 @@ export const pagesInfo: Readonly<PageInfo[]> = Object.freeze([
       english: '',
       japanese: '',
     },
-    headerBackGroundImage: '',
   },
   {
     name: 'salary',
@@ -27,7 +25,6 @@ export const pagesInfo: Readonly<PageInfo[]> = Object.freeze([
       english: 'Salary',
       japanese: '給与',
     },
-    headerBackGroundImage: require('@/assets/img/bg_header_salary.png'),
   },
   {
     name: 'feature',
@@ -36,7 +33,6 @@ export const pagesInfo: Readonly<PageInfo[]> = Object.freeze([
       english: 'Feature',
       japanese: '特長',
     },
-    headerBackGroundImage: require('@/assets/img/bg_header_feature.png'),
   },
   {
     name: 'support',
@@ -45,7 +41,6 @@ export const pagesInfo: Readonly<PageInfo[]> = Object.freeze([
       english: 'Support',
       japanese: 'サポート',
     },
-    headerBackGroundImage: require('@/assets/img/bg_header_support.png'),
   },
   {
     name: 'delivery_areas',
@@ -54,6 +49,5 @@ export const pagesInfo: Readonly<PageInfo[]> = Object.freeze([
       english: 'DeliveryAreas',
       japanese: '配送エリア',
     },
-    headerBackGroundImage: require('@/assets/img/bg_header_delivery_areas.png'),
   },
 ])
