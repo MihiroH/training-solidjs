@@ -1,3 +1,27 @@
-.job_description {
-  // TODO: スタイル追加。このセレクタは削除しても良い。
+.root {
+  padding: sizeMobile(16px) sizeMobile(16px) sizeMobile(108px);
+
+  @include mediaDesktop {
+    padding: sizeDesktop(64px) sizeDesktop(12px) sizeDesktop(168px);
+  }
+}
+
+.text {
+  display: table;
+  margin: auto;
+  font-size: sizeMobile(16px);
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+
+  @include mediaDesktop {
+    font-size: sizeDesktop(16px);
+  }
+}
+
+.textS {
+  font-size: sizeMobile(10px);
+
+  @include mediaDesktop {
+    font-size: sizeDesktop(10px);
+  }
 }
