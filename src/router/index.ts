@@ -7,7 +7,7 @@ export const routes: RouteDefinition[] = [
     component: lazy(() => import('@/pages/Top/Top')),
   },
   {
-    path: ['/top'],
+    path: '/top',
     data({ navigate }) {
       navigate('/')
     },
