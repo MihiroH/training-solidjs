@@ -47,4 +47,13 @@ export const pagesInfo: Readonly<PageInfo[]> = Object.freeze([
     },
     headerBackGroundImage: require('@/assets/img/bg_header_support.png'),
   },
+  {
+    name: 'delivery_areas',
+    path: '/delivery_areas',
+    title: {
+      english: 'DeliveryAreas',
+      japanese: '配送エリア',
+    },
+    headerBackGroundImage: require('@/assets/img/bg_header_delivery_areas.png'),
+  },
 ])
