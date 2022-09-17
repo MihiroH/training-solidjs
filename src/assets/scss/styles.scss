@@ -13,6 +13,8 @@ $blueVeryLight: #a3e0fc;
 $purple: #9747ff;
 $purpleLight: #b984ff;
 $green: #2ac610;
+$gray: #bdbcbc;
+$grayLight: #d9d9d9;
 
 $baseColor: #262626;
 $mainColor: $white;
@@ -76,4 +78,8 @@ $accentColor: #408eea;
 
 @function vw($px, $windowSize: $designSizeMobile) {
   @return calc($px / $windowSize) * 100vw;
+}
+
+@mixin marker($color: $yellow, $percent: 72%) {
+  background: linear-gradient(transparent #{$percent}, #{$color} #{$percent});
 }

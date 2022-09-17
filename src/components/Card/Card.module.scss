@@ -1,0 +1,35 @@
+.root {
+  width: 100%;
+  overflow: hidden;
+  font-size: sizeMobile(16px);
+  letter-spacing: 0.04em;
+  border: 1px solid $grayLight;
+  border-radius: 4px;
+
+  @include mediaDesktop {
+    font-size: sizeDesktop(16px);
+  }
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: sizeMobile(8px) sizeMobile(16px);
+  font-weight: bold;
+  background: $subColor;
+  border-bottom: 1px solid $grayLight;
+
+  @include mediaDesktop {
+    padding: sizeDesktop(8px) sizeDesktop(16px);
+  }
+}
+
+.body {
+  padding: sizeMobile(20px);
+  background: $mainColor;
+
+  @include mediaDesktop {
+    padding: sizeDesktop(20px);
+  }
+}
