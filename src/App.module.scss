@@ -1,0 +1,6 @@
+.section {
+  @include mediaDesktop {
+    width: 50%;
+    margin-left: 50%;
+  }
+}
