@@ -79,3 +79,7 @@ $accentColor: #408eea;
 @function vw($px, $windowSize: $designSizeMobile) {
   @return calc($px / $windowSize) * 100vw;
 }
+
+@mixin marker($color: $yellow, $percent: 72%) {
+  background: linear-gradient(transparent #{$percent}, #{$color} #{$percent});
+}

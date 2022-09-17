@@ -1,14 +1,20 @@
+import { Component } from 'solid-js'
+
 import LogoSub from '@/assets/img/logo-sub.svg'
 import styles from '@/components/PageTop/PageTop.module.scss'
 
-const PageTop = () => {
+type Props = {
+  class: string
+}
+
+const PageTop: Component<Props> = (props) => {
   const scrollTop = (event: Event) => {
     event.preventDefault()
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (
-    <a class={styles.inner} href="#" onClick={scrollTop}>
+    <a class={[styles.inner, props.class].join(' ')} href="#" onClick={scrollTop}>
       <div class={styles.logoL}>
         <img src={LogoSub} alt="" />
       </div>
