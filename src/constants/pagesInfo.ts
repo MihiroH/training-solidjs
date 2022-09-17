@@ -50,4 +50,12 @@ export const pagesInfo: Readonly<PageInfo[]> = Object.freeze([
       japanese: '配送エリア',
     },
   },
+  {
+    name: 'job_description',
+    path: '/job_description',
+    title: {
+      english: 'JobDescription',
+      japanese: '業務内容',
+    },
+  },
 ])
