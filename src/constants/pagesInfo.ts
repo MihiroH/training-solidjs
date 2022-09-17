@@ -38,4 +38,13 @@ export const pagesInfo: Readonly<PageInfo[]> = Object.freeze([
     },
     headerBackGroundImage: require('@/assets/img/bg_header_feature.png'),
   },
+  {
+    name: 'support',
+    path: '/support',
+    title: {
+      english: 'Support',
+      japanese: 'サポート',
+    },
+    headerBackGroundImage: require('@/assets/img/bg_header_support.png'),
+  },
 ])
