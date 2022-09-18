@@ -4,7 +4,7 @@ import LogoSub from '@/assets/img/logo-sub.svg'
 import styles from '@/components/PageTop/PageTop.module.scss'
 
 type Props = {
-  class: string
+  class?: string
 }
 
 const PageTop: Component<Props> = (props) => {
