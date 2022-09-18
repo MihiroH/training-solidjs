@@ -14,7 +14,7 @@ const Recruit = () => {
           {(item, i) => (
             <li class={styles.item}>
               <div class={styles.cardImage}>
-                <img src={`src/assets/img/recruit_step${i + 1}.png`} alt={item().title} />
+                <img src={`/img/recruit_step${i + 1}.png`} alt={item().title} />
               </div>
               <div class={styles.cardTextBox}>
                 <h3 class={styles.cardTitle}>

@@ -50,27 +50,27 @@ export const schedules = Object.freeze([
 export const thumbs = Object.freeze([
   {
     name: 'greeting',
-    src: 'src/assets/img/schedule_greeting.png',
+    src: '/img/schedule_greeting.png',
     alt: '挨拶',
   },
   {
     name: 'box',
-    src: 'src/assets/img/schedule_box.png',
+    src: '/img/schedule_box.png',
     alt: '段ボール',
   },
   {
     name: 'truck',
-    src: 'src/assets/img/schedule_truck.png',
+    src: '/img/schedule_truck.png',
     alt: 'トラック',
   },
   {
     name: 'signLanguage',
-    src: 'src/assets/img/schedule_sign_language.png',
+    src: '/img/schedule_sign_language.png',
     alt: '気持ちを届ける',
   },
   {
     name: 'drinking',
-    src: 'src/assets/img/schedule_drinking.png',
+    src: '/img/schedule_drinking.png',
     alt: '終業',
   },
 ])
