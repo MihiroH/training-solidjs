@@ -17,25 +17,18 @@
     "plugin:import/typescript",
     "prettier"
   ],
-  "plugins": [
-    "@typescript-eslint",
-    "import",
-    "unused-imports"
-  ],
+  "plugins": ["@typescript-eslint", "import", "unused-imports"],
   "rules": {
+    "solid/no-innerhtml": [
+      "warn",
+      {
+        "allowStatic": true
+      }
+    ],
     "import/order": [
       "error",
       {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "object",
-          "type"
-        ],
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
         "pathGroups": [
           {
             "pattern": "@alias/**",
@@ -57,11 +50,14 @@
     "jsx-quotes": ["error", "prefer-double"],
     "key-spacing": ["error", { "mode": "strict" }],
     "keyword-spacing": ["error"],
-    "max-len": ["error", {
-      "code": 120,
-      "ignoreTemplateLiterals": true,
-      "ignoreUrls": true
-    }],
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreTemplateLiterals": true,
+        "ignoreUrls": true
+      }
+    ],
     "no-extra-semi": "error",
     "no-multi-spaces": "error",
     "no-multiple-empty-lines": ["error", { "max": 1 }],
@@ -72,8 +68,8 @@
     "no-var": "error",
     "quote-props": ["error", "as-needed"],
     "quotes": ["error", "single"],
-    "semi": ["error", "never", {"beforeStatementContinuationChars": "never"}],
-    "semi-spacing": ["error", {"after": true, "before": false}],
+    "semi": ["error", "never", { "beforeStatementContinuationChars": "never" }],
+    "semi-spacing": ["error", { "after": true, "before": false }],
     "semi-style": ["error", "first"],
     "space-in-parens": ["error", "never"],
     "camelcase": [
