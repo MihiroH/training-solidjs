@@ -1,31 +1,24 @@
-import { For, createEffect } from 'solid-js'
+import { NavLink } from '@solidjs/router'
+import { Index } from 'solid-js'
 
 import styles from '@/components/Navigation/Navigation.module.scss'
 import { links } from '@/constants/index'
-import { cloneDomScrollHandler } from '@/utils/handler'
 
 const Navigation = () => {
-  let navSection: HTMLDivElement | undefined
-
-  createEffect(() => {
-    navSection?.addEventListener('scroll', cloneDomScrollHandler)
-    return () => {
-      navSection?.removeEventListener('scroll', cloneDomScrollHandler)
-    }
-  })
-
   return (
-    <div class={styles.navigation}>
-      <nav class={styles.container} ref={navSection}>
-        <For each={links}>
+    <nav class={styles.root}>
+      <ul class={styles.container}>
+        <Index each={links}>
           {(link) => (
-            <a href={link.URL} class={styles.item}>
-              {link.name}
-            </a>
+            <li class={styles.item}>
+              <NavLink href={link().URL} activeClass={styles.active} class={styles.link} end>
+                {link().name}
+              </NavLink>
+            </li>
           )}
-        </For>
-      </nav>
-    </div>
+        </Index>
+      </ul>
+    </nav>
   )
 }
 

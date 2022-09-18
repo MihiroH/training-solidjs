@@ -1,39 +1,39 @@
 export const links = [
   {
     name: 'TOP',
-    URL: '',
+    URL: '/',
   },
   {
     name: '給与',
-    URL: '',
+    URL: '/salary',
   },
   {
     name: '特徴',
-    URL: '',
+    URL: '/feature',
   },
   {
     name: 'サポート',
-    URL: '',
+    URL: '/support',
   },
   {
     name: 'スケジュール',
-    URL: '',
+    URL: '/schedule',
   },
   {
     name: '配送エリア',
-    URL: '',
+    URL: '/delivery_areas',
   },
   {
     name: '業務内容',
-    URL: '',
+    URL: '/job_description',
   },
   {
     name: '採用の流れ',
-    URL: '',
+    URL: '/recruit',
   },
   {
     name: '職場体験',
-    URL: '',
+    URL: '/internship',
   },
 ]
 
