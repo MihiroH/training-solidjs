@@ -8,7 +8,7 @@ type Props = {
 }
 
 const Button: Component<Props> = (props) => {
-  return <span class={[styles.root, styles.class].join(' ')}>{props.children}</span>
+  return <span class={[styles.root, props.class].join(' ')}>{props.children}</span>
 }
 
 export default Button
