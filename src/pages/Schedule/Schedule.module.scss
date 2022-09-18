@@ -1,3 +1,167 @@
+.root {
+  padding: sizeMobile(24px) 0 sizeMobile(98px);
+
+  @include mediaDesktop {
+    padding: sizeDesktop(36px) sizeDesktop(12px) sizeDesktop(119px);
+  }
+}
+
+.schedulesBox {
+  display: flex;
+  justify-content: center;
+
+  @include mediaDesktop {
+    gap: sizeDesktop(32px);
+  }
+}
+
+.schedules {
+  position: relative;
+  display: table;
+  letter-spacing: 0.04em;
+
+  &::before {
+    position: absolute;
+    inset: sizeMobile(4px) 0 0 sizeMobile(4px);
+    display: block;
+    width: sizeMobile(4px);
+    height: calc(100% - #{sizeMobile(4px)});
+    content: '';
+    background: $blueLight;
+    border: 1px solid $blue;
+    border-radius: 4px;
+
+    @include mediaDesktop {
+      inset: sizeDesktop(4px) 0 0 sizeDesktop(4px);
+      width: sizeDesktop(4px);
+      height: calc(100% - #{sizeDesktop(4px)});
+    }
+  }
+}
+
 .schedule {
-  // TODO: スタイル追加。このセレクタは削除しても良い。
+  display: flex;
+  gap: sizeMobile(12px);
+  align-items: flex-start;
+
+  @include mediaDesktop {
+    gap: sizeDesktop(12px);
+  }
+
+  & + & {
+    margin-top: sizeMobile(12px);
+
+    @include mediaDesktop {
+      margin-top: sizeDesktop(12px);
+    }
+  }
+}
+
+.timeBox {
+  position: relative;
+  display: flex;
+  gap: sizeMobile(12px);
+  align-items: center;
+  width: sizeMobile(112px);
+
+  @include mediaDesktop {
+    gap: sizeDesktop(16px);
+    width: sizeDesktop(130px);
+  }
+
+  &::before {
+    display: block;
+    width: sizeMobile(12px);
+    height: sizeMobile(12px);
+    content: '';
+    background: $mainColor;
+    border: 1px solid $blue;
+    border-radius: 50%;
+
+    @include mediaDesktop {
+      width: sizeDesktop(12px);
+      height: sizeDesktop(12px);
+    }
+  }
+}
+
+.time {
+  font-size: sizeMobile(12px);
+
+  @include mediaDesktop {
+    font-size: sizeDesktop(14px);
+  }
+}
+
+.textBox {
+  font-size: sizeMobile(12px);
+
+  @include mediaDesktop {
+    font-size: sizeDesktop(16px);
+  }
+}
+
+.desc {
+  display: block;
+  margin-top: sizeMobile(8px);
+  font-size: sizeMobile(10px);
+  line-height: 1.5;
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(8px);
+    font-size: sizeDesktop(14px);
+  }
+}
+
+.thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: sizeMobile(28px);
+  align-items: center;
+
+  @include mediaDesktop {
+    gap: sizeDesktop(36px);
+  }
+}
+
+.thumb {
+  &Greeting {
+    width: sizeMobile(72px);
+
+    @include mediaDesktop {
+      width: sizeDesktop(80px);
+    }
+  }
+
+  &Box {
+    width: sizeMobile(50px);
+
+    @include mediaDesktop {
+      width: sizeDesktop(56px);
+    }
+  }
+
+  &Truck {
+    width: sizeMobile(80px);
+
+    @include mediaDesktop {
+      width: sizeDesktop(96px);
+    }
+  }
+
+  &SignLanguage {
+    width: sizeMobile(70px);
+
+    @include mediaDesktop {
+      width: sizeDesktop(82px);
+    }
+  }
+
+  &Drinking {
+    width: sizeMobile(80px);
+
+    @include mediaDesktop {
+      width: sizeDesktop(92px);
+    }
+  }
 }
