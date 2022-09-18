@@ -2,13 +2,11 @@ import path from 'path'
 
 import { defineConfig } from 'vite'
 import { VitePluginFonts } from 'vite-plugin-fonts'
-import vitePluginRequire from 'vite-plugin-require'
 import solidPlugin from 'vite-plugin-solid'
 
 export default defineConfig({
   plugins: [
     solidPlugin(),
-    vitePluginRequire(),
     VitePluginFonts({
       google: {
         families: [
