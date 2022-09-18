@@ -1,6 +1,6 @@
 .root {
   padding: sizeMobile(8px);
-  padding-bottom: sizeMobile(104px);
+  padding-bottom: sizeMobile(128px);
 
   @include mediaDesktop {
     padding: sizeDesktop(20px) sizeDesktop(12px) sizeDesktop(168px);
@@ -21,7 +21,7 @@
     margin-top: sizeMobile(48px);
 
     @include mediaDesktop {
-      margin-top: sizeDesktop(48px);
+      margin-top: sizeDesktop(32px);
     }
   }
 }
@@ -77,7 +77,7 @@
 
 .pageTop {
   justify-content: center;
-  margin-top: sizeMobile(92px);
+  margin-top: sizeMobile(80px);
 
   @include mediaDesktop {
     margin-top: sizeDesktop(92px);

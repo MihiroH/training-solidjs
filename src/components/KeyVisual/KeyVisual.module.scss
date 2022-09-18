@@ -20,13 +20,13 @@
 .title {
   position: absolute;
   inset: 44px 0 auto;
-  display: table;
-  margin: auto;
-  @include fontEnglish;
+  display: inline;
   font-size: sizeMobile(40px);
+  text-align: center;
   background: linear-gradient(90.14deg, $blue -0.78%, $blueLight 92.72%);
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include fontEnglish;
 
   @include mediaDesktop {
     inset: sizeDesktop(44px) 0 auto;

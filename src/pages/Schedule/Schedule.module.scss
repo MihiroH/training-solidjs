@@ -1,8 +1,8 @@
 .root {
-  padding: sizeMobile(24px) 0 sizeMobile(98px);
+  padding: sizeMobile(16px) 0 sizeMobile(88px);
 
   @include mediaDesktop {
-    padding: sizeDesktop(36px) sizeDesktop(12px) sizeDesktop(119px);
+    padding: sizeDesktop(36px) sizeDesktop(12px) sizeDesktop(108px);
   }
 }
 
@@ -103,7 +103,7 @@
 
 .desc {
   display: block;
-  margin-top: sizeMobile(8px);
+  margin-top: sizeMobile(6px);
   font-size: sizeMobile(10px);
   line-height: 1.5;
 
@@ -116,7 +116,7 @@
 .thumbs {
   display: flex;
   flex-direction: column;
-  gap: sizeMobile(28px);
+  gap: sizeMobile(18px);
   align-items: center;
 
   @include mediaDesktop {

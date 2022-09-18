@@ -11,7 +11,7 @@
   background: $mainColor;
   border: 1px solid $accentColor;
   border-radius: 4px;
-  transition: 0.5s color cubic-bezier(0, 0.82, 0.57, 1.01);
+  transition: color 0.5s cubic-bezier(0, 0.82, 0.57, 1.01);
 
   @include mediaDesktop {
     width: sizeDesktop(243px);
@@ -29,7 +29,7 @@
     height: 100%;
     content: '';
     background: $accentColor;
-    transition: 0.5s transform cubic-bezier(0, 0.82, 0.57, 1.01);
+    transition: transform 0.5s cubic-bezier(0, 0.82, 0.57, 1.01);
     transform: scaleX(0) skewX(-25deg);
     transform-origin: right top;
   }
