@@ -8,7 +8,7 @@ export const links = [
     URL: '/salary',
   },
   {
-    name: '特徴',
+    name: '特長',
     URL: '/feature',
   },
   {
