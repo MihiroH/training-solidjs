@@ -1,0 +1,17 @@
+.root {
+  display: block;
+  width: sizeMobile(243px);
+  padding: sizeMobile(19px) 0;
+  font-size: sizeMobile(16px);
+  color: $accentColor;
+  text-align: center;
+  background: $mainColor;
+  border: 1px solid $accentColor;
+  border-radius: 4px;
+
+  @include mediaDesktop {
+    width: sizeDesktop(243px);
+    padding: sizeDesktop(19px) 0;
+    font-size: sizeDesktop(16px);
+  }
+}
