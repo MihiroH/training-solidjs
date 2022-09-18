@@ -1,10 +1,4 @@
-export type Area = {
-  name: string
-  displayName: string
-  cities: string[]
-}
-
-export const areas: Readonly<Area[]> = Object.freeze([
+export const areas = Object.freeze([
   {
     name: 'chiba',
     displayName: '船橋エリア',
