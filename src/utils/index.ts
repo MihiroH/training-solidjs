@@ -5,3 +5,7 @@ export const trailingSlash = (path: string) => {
   }
   return path.replace(/^(\/.*)(\/)$/, '$1')
 }
+
+export const capitalize = (value: string) => {
+  return value.charAt(0).toUpperCase() + value.slice(1)
+}

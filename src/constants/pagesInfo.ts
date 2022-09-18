@@ -67,11 +67,11 @@ export const pagesInfo: Readonly<PageInfo[]> = Object.freeze([
     },
   },
   {
-    name: 'recruit',
-    path: '/recruit',
+    name: 'schedule',
+    path: '/schedule',
     title: {
-      english: 'Recruit',
-      japanese: '採用の流れ',
+      english: 'Daily Schedule',
+      japanese: '1日のスケジュール',
     },
   },
 ])
