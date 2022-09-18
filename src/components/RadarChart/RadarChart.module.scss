@@ -2,7 +2,7 @@
   transition: transform 0.3s;
   transform: scale(0);
   transform-origin: center;
-  animation: scale 1s forwards;
+  animation: scale 0.5s forwards;
 }
 
 @keyframes scale {

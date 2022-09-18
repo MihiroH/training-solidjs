@@ -64,6 +64,11 @@
     background: $mainColor;
   }
 
+  &:focus {
+    color: $accentColor;
+    background: $mainColor;
+  }
+
   @include mediaDesktop {
     padding: sizeDesktop(11px) sizeDesktop(16px) sizeDesktop(12px);
     font-size: sizeDesktop(16px);
