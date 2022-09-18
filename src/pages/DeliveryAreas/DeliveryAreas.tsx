@@ -18,7 +18,7 @@ const DeliveryAreas = () => {
                     <>
                       <h3>{area().displayName}</h3>
                       <span class={styles.icon}>
-                        <img src={`src/assets/img/icon_${area().name}.png`} alt={`アイコン(${area().displayName})`} />
+                        <img src={`/img/icon_${area().name}.png`} alt={`アイコン(${area().displayName})`} />
                       </span>
                     </>
                   }
