@@ -1,4 +1,3 @@
-// TODO: @/constants/index.tsに移動
 export type Area = {
   name: string
   displayName: string

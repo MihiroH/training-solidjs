@@ -1,7 +1,7 @@
 import { Index } from 'solid-js'
 
 import Card from '@/components/Card/Card'
-import { areas } from '@/constants/areas'
+import { areas } from '@/pages/DeliveryAreas'
 import styles from '@/pages/DeliveryAreas/DeliveryAreas.module.scss'
 
 const DeliveryAreas = () => {
