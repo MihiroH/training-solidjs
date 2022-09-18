@@ -3,6 +3,7 @@ import { createMemo, Show } from 'solid-js'
 
 import styles from '@/App.module.scss'
 import KeyVisual from '@/components/KeyVisual/KeyVisual'
+import Navigation from '@/components/Navigation/Navigation'
 import SectionHeader from '@/components/SectionHeader/SectionHeader'
 import { PageInfo, pagesInfo } from '@/constants/pagesInfo'
 import { routes } from '@/router'
@@ -25,6 +26,7 @@ function App() {
         <div class={styles.section}>
           <SectionHeader pageInfo={currentPageInfo()} />
           <Routes />
+          <Navigation />
         </div>
       </Show>
     </>

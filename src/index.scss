@@ -15,6 +15,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+}
+
 img {
   display: block;
   width: 100%;
