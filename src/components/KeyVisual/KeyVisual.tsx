@@ -10,7 +10,7 @@ type Props = {
 const KeyVisual: Component<Props> = (props) => {
   return (
     <div class={styles.root} classList={{ [styles.active]: props.isActive }}>
-      <h1 class={styles.title}>Deliver To The Heart</h1>
+      <div class={styles.title}>Deliver To The Heart</div>
       <div class={styles.img}>
         <Image src="/img/kv.jpg" alt="Deliver To The Heart" width="2560" height="1600" webp />
       </div>

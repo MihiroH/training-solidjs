@@ -20,7 +20,7 @@ const SectionHeader: Component<Props> = (props) => {
         </Link>
         <div class={styles.title}>
           <div class={styles.titleEnglish}>{props.pageInfo.title.english}</div>
-          <h2 class={styles.titleJapanese}>{props.pageInfo.title.japanese}</h2>
+          <h1 class={styles.titleJapanese}>{props.pageInfo.title.japanese}</h1>
         </div>
         <a class={styles.iconContact}>
           <Image src="/img/icon_email.svg" alt="お問い合わせ" width="32" height="23" />
