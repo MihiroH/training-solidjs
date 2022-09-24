@@ -23,14 +23,14 @@ function App() {
     <>
       <Show when={!isNotFoundPage()} fallback={<Routes />}>
         <KeyVisual isActive={!isTopPage()} />
-        <div class={styles.section}>
+        <section class={styles.section}>
           <Show when={!isTopPage()}>
             <SectionHeader pageInfo={currentPageInfo()} />
           </Show>
           <Routes />
-          <Navigation />
-        </div>
+        </section>
       </Show>
+      <Navigation />
     </>
   )
 }

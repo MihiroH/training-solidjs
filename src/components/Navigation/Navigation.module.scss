@@ -43,7 +43,8 @@
   display: inline-block;
 
   &:not(:first-child) {
-    margin-left: sizeMobile(8px);
+    margin-left: sizeMobile(4px);
+
     @include mediaDesktop {
       margin-left: sizeDesktop(8px);
     }
