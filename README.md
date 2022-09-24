@@ -107,3 +107,13 @@ $ npm run lint:style
 ```bash
 $ npm run lint:style:fix
 ```
+
+### png画像をwebpに変換
+対象ファイル: `./public/img/*.png`
+
+```bash
+$ npm run convert:png2webp
+```
+
+※インストール済みのSquoosh CLIで細かい調整も可能  
+https://github.com/GoogleChromeLabs/squoosh/tree/dev/cli

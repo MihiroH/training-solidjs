@@ -1,5 +1,6 @@
 import { Component } from 'solid-js'
 
+import Image from '@/components/Image/Image'
 import styles from '@/components/PageTop/PageTop.module.scss'
 
 type Props = {
@@ -17,17 +18,17 @@ const PageTop: Component<Props> = (props) => {
   return (
     <a class={[styles.inner, props.class].join(' ')} href="#" onClick={scrollTop}>
       <div class={styles.logoL}>
-        <img src={logoSub} alt="" />
+        <Image src={logoSub} alt="" width="33" height="33" />
       </div>
       <div class={styles.logoM}>
-        <img src={logoSub} alt="" />
+        <Image src={logoSub} alt="" width="33" height="33" />
       </div>
       <p class={styles.text}>PAGE TOP</p>
       <div class={styles.logoM}>
-        <img src={logoSub} alt="" />
+        <Image src={logoSub} alt="" width="33" height="33" />
       </div>
       <div class={styles.logoL}>
-        <img src={logoSub} alt="" />
+        <Image src={logoSub} alt="" width="33" height="33" />
       </div>
     </a>
   )

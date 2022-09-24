@@ -14,12 +14,14 @@
     "lint:style": "stylelint src/**/*.scss",
     "lint:style:fix": "stylelint --fix src/**/*.scss",
     "format": "prettier --write --ignore-path .gitignore './src/**/*.{js,jsx,ts,tsx,json,scss}'",
+    "convert:png2webp": "npx @squoosh/cli -d public/img --webp auto public/img/*.png",
     "prepare": "husky install",
     "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@squoosh/lib": "^0.4.0",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
     "eslint": "^8.23.0",
