@@ -1,5 +1,7 @@
 import { DeepReadonly } from '@/types'
 
+export const MAIL_ADDRESS = 'human.create24@gmail.com'
+
 export type PageInfo = {
   name: string
   path: string

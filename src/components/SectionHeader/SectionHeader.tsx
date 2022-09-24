@@ -4,6 +4,7 @@ import { Component, createMemo } from 'solid-js'
 import Image from '@/components/Image/Image'
 import styles from '@/components/SectionHeader/SectionHeader.module.scss'
 import { PageInfo } from '@/constants'
+import { mailtoTemplate } from '@/utils/mailtoTemplate'
 
 type Props = {
   pageInfo: PageInfo
@@ -22,7 +23,7 @@ const SectionHeader: Component<Props> = (props) => {
           <div class={styles.titleEnglish}>{props.pageInfo.title.english}</div>
           <h1 class={styles.titleJapanese}>{props.pageInfo.title.japanese}</h1>
         </div>
-        <a class={styles.iconContact}>
+        <a href={mailtoTemplate.contact} target="_blank" class={styles.iconContact}>
           <Image src="/img/icon_email.svg" alt="お問い合わせ" width="32" height="23" />
         </a>
       </div>
