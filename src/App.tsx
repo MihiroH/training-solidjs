@@ -5,7 +5,7 @@ import styles from '@/App.module.scss'
 import KeyVisual from '@/components/KeyVisual/KeyVisual'
 import Navigation from '@/components/Navigation/Navigation'
 import SectionHeader from '@/components/SectionHeader/SectionHeader'
-import { PageInfo, pagesInfo } from '@/constants/pagesInfo'
+import { PageInfo, PAGES_INFO } from '@/constants'
 import { routes } from '@/router'
 import { trailingSlash } from '@/utils'
 
@@ -13,10 +13,10 @@ function App() {
   const Routes = useRoutes(routes)
   const location = useLocation()
   const pathname = createMemo(() => trailingSlash(location.pathname))
-  const currentPageInfo = createMemo(() => pagesInfo.filter((info: PageInfo) => info.path === pathname())[0])
+  const currentPageInfo = createMemo(() => PAGES_INFO.filter((info: PageInfo) => info.path === pathname())[0])
   const isNotFoundPage = createMemo(() => !currentPageInfo())
   const isTopPage = createMemo(() => {
-    return pathname() === pagesInfo.filter((info: PageInfo) => info.name === 'top')[0].path
+    return pathname() === PAGES_INFO.filter((info: PageInfo) => info.name === 'top')[0].path
   })
 
   return (

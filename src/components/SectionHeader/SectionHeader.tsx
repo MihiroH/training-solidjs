@@ -3,7 +3,7 @@ import { Component, createMemo } from 'solid-js'
 
 import Image from '@/components/Image/Image'
 import styles from '@/components/SectionHeader/SectionHeader.module.scss'
-import { PageInfo } from '@/constants/pagesInfo'
+import { PageInfo } from '@/constants'
 
 type Props = {
   pageInfo: PageInfo

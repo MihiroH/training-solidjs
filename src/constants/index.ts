@@ -1,42 +1,85 @@
-export const links = [
+import { DeepReadonly } from '@/types'
+
+export type PageInfo = {
+  name: string
+  path: string
+  title: {
+    english: string
+    japanese: string
+  }
+}
+
+export const PAGES_INFO: DeepReadonly<PageInfo[]> = [
   {
-    name: 'TOP',
-    URL: '/',
+    name: 'top',
+    path: '/',
+    title: {
+      english: 'TOP',
+      japanese: 'トップ',
+    },
   },
   {
-    name: '給与',
-    URL: '/salary',
+    name: 'salary',
+    path: '/salary',
+    title: {
+      english: 'Salary',
+      japanese: '給与',
+    },
   },
   {
-    name: '特長',
-    URL: '/feature',
+    name: 'feature',
+    path: '/feature',
+    title: {
+      english: 'Feature',
+      japanese: '特長',
+    },
   },
   {
-    name: 'サポート',
-    URL: '/support',
+    name: 'support',
+    path: '/support',
+    title: {
+      english: 'Support',
+      japanese: 'サポート',
+    },
   },
   {
-    name: 'スケジュール',
-    URL: '/schedule',
+    name: 'schedule',
+    path: '/schedule',
+    title: {
+      english: 'Daily Schedule',
+      japanese: '1日のスケジュール',
+    },
   },
   {
-    name: '配送エリア',
-    URL: '/delivery_areas',
+    name: 'delivery_areas',
+    path: '/delivery_areas',
+    title: {
+      english: 'DeliveryAreas',
+      japanese: '配送エリア',
+    },
   },
   {
-    name: '業務内容',
-    URL: '/job_description',
+    name: 'job_description',
+    path: '/job_description',
+    title: {
+      english: 'JobDescription',
+      japanese: '業務内容',
+    },
   },
   {
-    name: '採用の流れ',
-    URL: '/recruit',
+    name: 'recruit',
+    path: '/recruit',
+    title: {
+      english: 'Recruit',
+      japanese: '採用の流れ',
+    },
   },
   {
-    name: '職場体験',
-    URL: '/internship',
+    name: 'internship',
+    path: '/internship',
+    title: {
+      english: 'Internship',
+      japanese: '職場体験',
+    },
   },
 ]
-
-export default {
-  links,
-}
