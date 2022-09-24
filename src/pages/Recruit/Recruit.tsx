@@ -28,7 +28,7 @@ const Recruit = () => {
         </Index>
       </ul>
       <a href={mailtoTemplate.recruit} target="_blank" class={styles.button}>
-        <Button>応募する</Button>
+        <Button>採用に応募する</Button>
       </a>
       <PageTop class={styles.pageTop} />
     </div>
