@@ -1,6 +1,15 @@
 import { RouteDefinition } from '@solidjs/router'
 import { lazy } from 'solid-js'
 
+import DeliveryAreas from '@/pages/DeliveryAreas/DeliveryAreas'
+import Feature from '@/pages/Feature/Feature'
+import Internship from '@/pages/Internship/Internship'
+import JobDescription from '@/pages/JobDescription/JobDescription'
+import Recruit from '@/pages/Recruit/Recruit'
+import Salary from '@/pages/Salary/Salary'
+import Schedule from '@/pages/Schedule/Schedule'
+import Support from '@/pages/Support/Support'
+
 export const routes: RouteDefinition[] = [
   {
     path: '/',
@@ -13,35 +22,35 @@ export const routes: RouteDefinition[] = [
   },
   {
     path: '/salary',
-    component: lazy(() => import('@/pages/Salary/Salary')),
+    component: Salary,
   },
   {
     path: '/feature',
-    component: lazy(() => import('@/pages/Feature/Feature')),
+    component: Feature,
   },
   {
     path: '/support',
-    component: lazy(() => import('@/pages/Support/Support')),
+    component: Support,
   },
   {
     path: '/schedule',
-    component: lazy(() => import('@/pages/Schedule/Schedule')),
+    component: Schedule,
   },
   {
     path: '/delivery_areas',
-    component: lazy(() => import('@/pages/DeliveryAreas/DeliveryAreas')),
+    component: DeliveryAreas,
   },
   {
     path: '/job_description',
-    component: lazy(() => import('@/pages/JobDescription/JobDescription')),
+    component: JobDescription,
   },
   {
     path: '/recruit',
-    component: lazy(() => import('@/pages/Recruit/Recruit')),
+    component: Recruit,
   },
   {
     path: '/internship',
-    component: lazy(() => import('@/pages/Internship/Internship')),
+    component: Internship,
   },
   {
     path: '*',
