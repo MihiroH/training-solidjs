@@ -13,7 +13,7 @@ const Recruit = () => {
       <ul class={styles.list}>
         <Index each={list}>
           {(item, i) => (
-            <li class={styles.item}>
+            <li class={[styles.item, `fadeUp-${i + 1}`].join(' ')}>
               <div class={styles.cardImage}>
                 <Image src={`/img/recruit_step${i + 1}.png`} alt={item().title} width="718" height="238" webp />
               </div>

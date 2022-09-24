@@ -50,7 +50,7 @@ const CardSalary: Component<CardSalaryProps> = (props) => {
 const Salary = () => {
   return (
     <div class={styles.root}>
-      <div class={styles.item}>
+      <div class={[styles.item, 'fadeUp-1'].join(' ')}>
         <div class={styles.subTitle}>1年目</div>
         <div class={styles.cards}>
           <CardSalary workingDaysPerWeek={5} workingTime="08 : 00 〜 19 : 00" salary={26} numberOfBonuses={1} />
@@ -58,14 +58,14 @@ const Salary = () => {
         </div>
       </div>
 
-      <div class={styles.item}>
+      <div class={[styles.item, 'fadeUp-2'].join(' ')}>
         <div class={styles.subTitle}>2年目</div>
         <div class={styles.cards}>
           <CardSalary workingDaysPerWeek={5} workingTime="08 : 00 〜 19 : 00" salary={49} numberOfBonuses={2} />
           <CardSalary workingDaysPerWeek={6} workingTime="08 : 00 〜 19 : 00" salary={63} numberOfBonuses={2} />
         </div>
       </div>
-      <div class={styles.item}>
+      <div class={[styles.item, 'fadeUp-3'].join(' ')}>
         <div class={styles.subTitle}>その他</div>
         <div class={[styles.cards, styles.cardsColumnDesktop].join(' ')}>
           <Card

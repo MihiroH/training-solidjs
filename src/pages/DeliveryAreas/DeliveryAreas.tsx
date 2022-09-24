@@ -12,8 +12,8 @@ const DeliveryAreas = () => {
         <p class={styles.lead}>基本的に自宅から最寄りの営業所をお選び頂きます</p>
         <ul class={styles.list}>
           <Index each={areas}>
-            {(area) => (
-              <li class={styles.item}>
+            {(area, i) => (
+              <li class={[styles.item, `fadeUp-${i + 1}`].join(' ')}>
                 <Card
                   head={
                     <>
