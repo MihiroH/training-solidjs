@@ -1,5 +1,6 @@
 import { Index } from 'solid-js'
 
+import Image from '@/components/Image/Image'
 import { schedules, thumbs } from '@/pages/Schedule'
 import styles from '@/pages/Schedule/Schedule.module.scss'
 import { capitalize } from '@/utils'
@@ -36,7 +37,7 @@ const Schedule = () => {
           <Index each={thumbs}>
             {(thumb) => (
               <div class={styles[`thumb${capitalize(thumb().name)}`]}>
-                <img src={thumb().src} alt={thumb().alt} />
+                <Image src={thumb().src} alt={thumb().alt} width="160" height="160" webp />
               </div>
             )}
           </Index>

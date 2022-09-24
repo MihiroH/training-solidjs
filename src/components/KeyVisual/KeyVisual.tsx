@@ -1,5 +1,6 @@
 import { Component } from 'solid-js'
 
+import Image from '@/components/Image/Image'
 import styles from '@/components/KeyVisual/KeyVisual.module.scss'
 
 type Props = {
@@ -11,7 +12,7 @@ const KeyVisual: Component<Props> = (props) => {
     <div class={styles.root} classList={{ [styles.active]: props.isActive }}>
       <h1 class={styles.title}>Deliver To The Heart</h1>
       <div class={styles.img}>
-        <img src="/img/kv.png" alt="Deliver To The Heart" />
+        <Image src="/img/kv.jpg" alt="Deliver To The Heart" width="2560" height="1600" webp />
       </div>
     </div>
   )

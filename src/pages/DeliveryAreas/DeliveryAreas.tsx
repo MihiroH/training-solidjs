@@ -1,6 +1,7 @@
 import { Index } from 'solid-js'
 
 import Card from '@/components/Card/Card'
+import Image from '@/components/Image/Image'
 import { areas } from '@/pages/DeliveryAreas'
 import styles from '@/pages/DeliveryAreas/DeliveryAreas.module.scss'
 
@@ -18,7 +19,13 @@ const DeliveryAreas = () => {
                     <>
                       <h3>{area().displayName}</h3>
                       <span class={styles.icon}>
-                        <img src={`/img/icon_${area().name}.png`} alt={`アイコン(${area().displayName})`} />
+                        <Image
+                          src={`/img/icon_${area().name}.png`}
+                          alt={`アイコン(${area().displayName})`}
+                          width="72"
+                          height="72"
+                          webp
+                        />
                       </span>
                     </>
                   }
