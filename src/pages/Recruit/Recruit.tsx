@@ -1,4 +1,3 @@
-import { Link } from '@solidjs/router'
 import { Index } from 'solid-js'
 
 import Button from '@/components/Button/Button'
@@ -6,6 +5,7 @@ import Image from '@/components/Image/Image'
 import PageTop from '@/components/PageTop/PageTop'
 import { list } from '@/pages/Recruit'
 import styles from '@/pages/Recruit/Recruit.module.scss'
+import { mailtoTemplate } from '@/utils/mailtoTemplate'
 
 const Recruit = () => {
   return (
@@ -27,9 +27,9 @@ const Recruit = () => {
           )}
         </Index>
       </ul>
-      <Link href="mailto:" class={styles.button}>
-        <Button>応募する</Button>
-      </Link>
+      <a href={mailtoTemplate.recruit} target="_blank" class={styles.button}>
+        <Button>採用に応募する</Button>
+      </a>
       <PageTop class={styles.pageTop} />
     </div>
   )

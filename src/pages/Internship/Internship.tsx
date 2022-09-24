@@ -1,7 +1,6 @@
-import { Link } from '@solidjs/router'
-
 import Button from '@/components/Button/Button'
 import styles from '@/pages/Internship/Internship.module.scss'
+import { mailtoTemplate } from '@/utils/mailtoTemplate'
 
 const Internship = () => {
   return (
@@ -22,9 +21,9 @@ const Internship = () => {
           <br />
           ※勤務しない場合、体験日の支払いなし
         </p>
-        <Link href="mailto:" class={styles.button}>
+        <a href={mailtoTemplate.internship} target="_blank" class={styles.button}>
           <Button>職場体験に申し込む</Button>
-        </Link>
+        </a>
       </div>
     </div>
   )

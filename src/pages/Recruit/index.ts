@@ -1,9 +1,10 @@
 import styles from '@/pages/Recruit/Recruit.module.scss'
+import { mailtoTemplate } from '@/utils/mailtoTemplate'
 
 export const list = [
   {
     title: '面接日のご相談',
-    desc: `<a href="mailto:" class="${styles.link}">メール</a>にて希望日を3日以上お伝えください。<br>仕事内容が気になる方は、面接前に一日、助手席での職場体験も可能です！`,
+    desc: `<a href="${mailtoTemplate.recruit}" target="_blank" class="${styles.link}">メール</a>にて希望日を3日以上お伝えください。<br>仕事内容が気になる方は、面接前に一日、助手席での職場体験も可能です！`,
   },
   {
     title: '面接',

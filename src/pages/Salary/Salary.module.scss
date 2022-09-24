@@ -133,6 +133,15 @@
   }
 }
 
+.button {
+  display: table;
+  margin: sizeMobile(64px) auto 0;
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(64px);
+  }
+}
+
 .pageTop {
   justify-content: center;
   margin-top: sizeMobile(64px);

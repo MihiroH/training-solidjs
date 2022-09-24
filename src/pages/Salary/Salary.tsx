@@ -1,8 +1,10 @@
 import { Component, createMemo } from 'solid-js'
 
+import Button from '@/components/Button/Button'
 import Card from '@/components/Card/Card'
 import PageTop from '@/components/PageTop/PageTop'
 import styles from '@/pages/Salary/Salary.module.scss'
+import { mailtoTemplate } from '@/utils/mailtoTemplate'
 
 type CardSalaryProps = {
   workingDaysPerWeek: number
@@ -106,6 +108,9 @@ const Salary = () => {
           />
         </div>
       </div>
+      <a href={mailtoTemplate.recruit} target="_blank" class={styles.button}>
+        <Button>採用に応募する</Button>
+      </a>
       <PageTop class={styles.pageTop} />
     </div>
   )
