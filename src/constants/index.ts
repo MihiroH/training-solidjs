@@ -85,5 +85,3 @@ export const PAGES_INFO: DeepReadonly<PageInfo[]> = [
     },
   },
 ]
-
-export const NAVIGATION_SCROLL_EXTRA_AMOUNT = 20
