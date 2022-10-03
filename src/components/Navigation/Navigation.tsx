@@ -2,22 +2,31 @@ import { NavLink, useLocation } from '@solidjs/router'
 import { Index, createMemo, createEffect } from 'solid-js'
 
 import styles from '@/components/Navigation/Navigation.module.scss'
-import { PAGES_INFO, NAVIGATION_SCROLL_EXTRA_AMOUNT } from '@/constants'
+import { PAGES_INFO } from '@/constants'
 import { mailtoTemplate } from '@/utils/mailtoTemplate'
 
 const Navigation = () => {
+  const NAVIGATION_SCROLL_EXTRA_AMOUNT = 20
+
   let navigationContainer!: HTMLUListElement
   const currentLocation = useLocation()
   const currentPathIndex = createMemo(() => PAGES_INFO.findIndex((item) => item.path === currentLocation.pathname))
 
-  createEffect(() => {
+  const navigationScrollCallback = (target: HTMLUListElement, isSmooth: boolean | number) => {
     const currentNavChild = navigationContainer.childNodes[currentPathIndex()] as HTMLLIElement
     const navChildPosition = currentNavChild.getBoundingClientRect().left + navigationContainer.scrollLeft
 
-    navigationContainer.scrollTo({
+    const scrollParams = {
       left: navChildPosition - NAVIGATION_SCROLL_EXTRA_AMOUNT,
-      behavior: 'smooth',
-    })
+      behavior: isSmooth ? 'smooth' : ('auto' as ScrollBehavior),
+    }
+
+    target.scrollTo(scrollParams)
+  }
+
+  createEffect(() => {
+    window.addEventListener('load', () => navigationScrollCallback(navigationContainer, false))
+    navigationScrollCallback(navigationContainer, true)
   })
 
   return (
