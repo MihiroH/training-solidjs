@@ -1,5 +1,5 @@
 import { NavLink, useLocation } from '@solidjs/router'
-import { Index, createMemo, createEffect } from 'solid-js'
+import { Index, createMemo, createEffect, onMount } from 'solid-js'
 
 import styles from '@/components/Navigation/Navigation.module.scss'
 import { PAGES_INFO } from '@/constants'
@@ -24,8 +24,11 @@ const Navigation = () => {
     target.scrollTo(scrollParams)
   }
 
-  createEffect(() => {
+  onMount(() => {
     window.addEventListener('load', () => navigationScrollCallback(navigationContainer, false))
+  })
+
+  createEffect(() => {
     navigationScrollCallback(navigationContainer, true)
   })
 
