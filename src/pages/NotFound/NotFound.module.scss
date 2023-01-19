@@ -1,0 +1,43 @@
+.root {
+  padding: sizeMobile(160px) sizeMobile(10px);
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  @include mediaDesktop {
+    padding: sizeDesktop(172px) sizeDesktop(10px);
+  }
+}
+
+.title {
+  font-size: sizeMobile(72px);
+  font-weight: bold;
+
+  @include mediaDesktop {
+    font-size: sizeDesktop(80px);
+  }
+}
+
+.text {
+  margin-top: sizeMobile(40px);
+  font-size: sizeMobile(16px);
+  line-height: 2;
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(64px);
+    font-size: sizeDesktop(18px);
+  }
+}
+
+.logo {
+  position: absolute;
+  top: sizeMobile(100px);
+  right: 0;
+  left: 0;
+  z-index: -1;
+  margin: auto;
+
+  @include mediaDesktop {
+    top: sizeDesktop(64px);
+    width: sizeDesktop(560px);
+  }
+}

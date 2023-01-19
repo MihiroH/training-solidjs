@@ -1,0 +1,59 @@
+.root {
+  padding: sizeMobile(16px) sizeMobile(8px) sizeMobile(92px);
+
+  @include mediaDesktop {
+    padding: sizeDesktop(16px) sizeDesktop(12px) sizeDesktop(128px);
+  }
+}
+
+.inner {
+  display: table;
+  margin: auto;
+}
+
+.lead {
+  margin-left: sizeMobile(4px);
+  font-size: sizeMobile(14px);
+  letter-spacing: 0.02em;
+
+  @include mediaDesktop {
+    margin-left: sizeDesktop(4px);
+    font-size: sizeDesktop(14px);
+  }
+}
+
+.list {
+  margin-top: sizeMobile(16px);
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(16px);
+  }
+}
+
+.item {
+  width: sizeMobile(359px);
+
+  @include mediaDesktop {
+    width: sizeDesktop(359px);
+  }
+
+  & + & {
+    margin-top: sizeMobile(8px);
+
+    @include mediaDesktop {
+      margin-top: sizeDesktop(12px);
+    }
+  }
+}
+
+.icon {
+  width: sizeMobile(36px);
+
+  @include mediaDesktop {
+    width: sizeDesktop(36px);
+  }
+}
+
+.desc {
+  line-height: 1.7;
+}

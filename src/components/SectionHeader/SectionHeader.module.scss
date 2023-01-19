@@ -1,0 +1,71 @@
+.root {
+  position: sticky;
+  inset: 0;
+  z-index: 1;
+  background-size: cover;
+
+  @include mediaDesktop {
+    background-image: unset !important;
+  }
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: sizeMobile(14px) sizeMobile(16px);
+  background: linear-gradient(94.48deg, rgba($blue, 0.7) 0%, rgba($blueLight, 0.7) 100%);
+
+  @include mediaDesktop {
+    padding: sizeDesktop(16px) sizeDesktop(24px);
+    backdrop-filter: blur(2px);
+    background: linear-gradient(
+      94.48deg,
+      rgba($blueLight, 0.7) 0%,
+      rgba($blue, 0.7) 50.52%,
+      rgba($blueLight, 0.7) 100%
+    );
+  }
+}
+
+.logo {
+  width: sizeMobile(32px);
+
+  @include mediaDesktop {
+    width: sizeDesktop(36px);
+  }
+}
+
+.iconContact {
+  width: sizeMobile(28px);
+
+  @include mediaDesktop {
+    width: sizeDesktop(32px);
+  }
+}
+
+.title {
+  color: $white;
+  text-align: center;
+}
+
+.titleEnglish {
+  @include fontEnglish;
+  font-size: sizeMobile(36px);
+
+  @include mediaDesktop {
+    font-size: sizeDesktop(36px);
+  }
+}
+
+.titleJapanese {
+  margin-top: sizeMobile(8px);
+  font-size: sizeMobile(18px);
+  font-weight: bold;
+  letter-spacing: 0.04em;
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(8px);
+    font-size: sizeDesktop(18px);
+  }
+}

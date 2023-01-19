@@ -1,0 +1,152 @@
+.root {
+  padding: sizeMobile(8px);
+  padding-bottom: sizeMobile(128px);
+
+  @include mediaDesktop {
+    padding: sizeDesktop(20px) sizeDesktop(12px) sizeDesktop(168px);
+  }
+}
+
+.item {
+  & + & {
+    margin-top: sizeMobile(8px);
+
+    @include mediaDesktop {
+      margin-top: sizeDesktop(32px);
+    }
+  }
+}
+
+.subTitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: sizeMobile(2px);
+  font-size: sizeMobile(12px);
+  font-weight: bold;
+
+  @include mediaMobile {
+    color: $gray;
+  }
+
+  @include mediaDesktop {
+    margin-left: sizeDesktop(4px);
+    font-size: sizeDesktop(18px);
+  }
+
+  &::after {
+    @include mediaMobile {
+      display: block;
+      flex-grow: 1;
+      height: 1px;
+      margin-left: sizeMobile(8px);
+      content: '';
+      background: $grayLight;
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  gap: sizeMobile(8px);
+  margin-top: sizeMobile(8px);
+
+  @include mediaMobile {
+    flex-direction: column;
+  }
+
+  @include mediaDesktop {
+    gap: sizeDesktop(12px);
+    margin-top: sizeDesktop(16px);
+  }
+
+  &.cardsColumnDesktop {
+    @include mediaDesktop {
+      flex-direction: column;
+      gap: sizeDesktop(12px);
+    }
+  }
+}
+
+.cardBodyItem {
+  flex-shrink: 0;
+
+  & + & {
+    margin-left: sizeMobile(36px);
+
+    @include mediaDesktop {
+      margin-left: min(#{vw(36px, $designSizeDesktop)}, #{sizeDesktop(36px)});
+    }
+  }
+}
+
+.cardBodyInner {
+  display: flex;
+}
+
+.cardTitle {
+  margin-bottom: sizeMobile(4px);
+  font-weight: bold;
+
+  @include mediaDesktop {
+    margin-bottom: sizeDesktop(4px);
+  }
+}
+
+.cardTextWithMarker {
+  @include marker($blueVeryLight);
+  display: table;
+  font-weight: bold;
+}
+
+.cardTextStrong {
+  font-size: sizeMobile(26px);
+
+  @include mediaDesktop {
+    font-size: sizeDesktop(26px);
+  }
+}
+
+.cardAttention {
+  display: block;
+  margin-top: sizeMobile(12px);
+  font-size: sizeMobile(12px);
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(12px);
+    font-size: sizeDesktop(12px);
+  }
+}
+
+.cardDesc {
+  margin-top: sizeMobile(12px);
+  font-weight: bold;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(12px);
+  }
+
+  .cardTextWithMarker {
+    display: inline;
+  }
+}
+
+.button {
+  display: table;
+  margin: sizeMobile(64px) auto 0;
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(64px);
+  }
+}
+
+.pageTop {
+  justify-content: center;
+  margin-top: sizeMobile(64px);
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(92px);
+  }
+}

@@ -1,0 +1,36 @@
+.root {
+  padding: sizeMobile(28px) sizeMobile(16px) sizeMobile(108px);
+
+  @include mediaDesktop {
+    padding: sizeDesktop(64px) sizeDesktop(12px) sizeDesktop(168px);
+  }
+}
+
+.inner {
+  display: table;
+  width: sizeMobile(343px);
+  margin: auto;
+
+  @include mediaDesktop {
+    width: sizeDesktop(343px);
+  }
+}
+
+.text {
+  font-size: sizeMobile(16px);
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+
+  @include mediaDesktop {
+    font-size: sizeDesktop(16px);
+  }
+}
+
+.button {
+  display: table;
+  margin: sizeMobile(48px) auto 0;
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(48px);
+  }
+}

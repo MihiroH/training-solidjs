@@ -1,0 +1,85 @@
+.root {
+  padding: sizeMobile(8px);
+  padding-bottom: sizeMobile(128px);
+
+  @include mediaDesktop {
+    padding: sizeDesktop(20px) sizeDesktop(12px) sizeDesktop(168px);
+  }
+}
+
+.list {
+  width: sizeMobile(359px);
+  margin: auto;
+
+  @include mediaDesktop {
+    width: sizeDesktop(359px);
+  }
+}
+
+.item {
+  & + & {
+    margin-top: sizeMobile(48px);
+
+    @include mediaDesktop {
+      margin-top: sizeDesktop(32px);
+    }
+  }
+}
+
+.cardImage {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.cardTextBox {
+  padding: sizeMobile(16px);
+  padding-bottom: 0;
+  letter-spacing: 0.04em;
+
+  @include mediaDesktop {
+    padding: sizeDesktop(16px);
+  }
+}
+
+.cardTitle {
+  font-size: sizeMobile(16px);
+  font-weight: bold;
+  color: $accentColor;
+
+  @include mediaDesktop {
+    font-size: sizeDesktop(16px);
+  }
+}
+
+.cardDesc {
+  margin-top: sizeMobile(8px);
+  font-size: sizeMobile(14px);
+  line-height: 1.7;
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(8px);
+    font-size: sizeDesktop(14px);
+  }
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.button {
+  display: table;
+  margin: sizeMobile(64px) auto 0;
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(64px);
+  }
+}
+
+.pageTop {
+  justify-content: center;
+  margin-top: sizeMobile(80px);
+
+  @include mediaDesktop {
+    margin-top: sizeDesktop(92px);
+  }
+}

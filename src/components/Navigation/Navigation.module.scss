@@ -1,0 +1,82 @@
+.root {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  padding: sizeMobile(8px);
+  background: linear-gradient(92.61deg, rgba($blue, 0.8) 0%, rgba($blueLight, 0.8) 100%);
+  border-radius: 4px 4px 0 0;
+  backdrop-filter: blur(2px);
+
+  @include mediaDesktop {
+    padding: sizeDesktop(8px);
+    background: linear-gradient(92.61deg, rgba($blueLight, 0.8) 0%, rgba($blue, 0.8) 50%, rgba($blueLight, 0.8) 100%);
+  }
+}
+
+.container {
+  position: relative;
+  padding: sizeMobile(8px);
+  overflow-x: auto;
+  white-space: nowrap;
+  background: linear-gradient(91.82deg, rgba($mainColor, 0.3) 0%, rgba($mainColor, 0.1) 100%);
+  border: 1px solid rgba($mainColor, 0.18);
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+
+  // スクロールバーを非表示にする
+  @include mediaMobile {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  @include mediaDesktop {
+    padding: sizeDesktop(8px);
+    text-align: center;
+  }
+}
+
+.item {
+  display: inline-block;
+
+  &:not(:first-child) {
+    margin-left: sizeMobile(4px);
+
+    @include mediaDesktop {
+      margin-left: sizeDesktop(8px);
+    }
+  }
+}
+
+.link {
+  display: block;
+  padding: sizeMobile(11px) sizeMobile(16px) sizeMobile(12px);
+  font-size: sizeMobile(16px);
+  font-weight: bold;
+  color: $mainColor;
+  border-radius: 4px;
+  transition: color 0.3s, background 0.3s;
+
+  @include hoverStyle {
+    color: $accentColor;
+    background: $mainColor;
+  }
+
+  &:focus {
+    color: $accentColor;
+    background: $mainColor;
+  }
+
+  @include mediaDesktop {
+    padding: sizeDesktop(11px) sizeDesktop(16px) sizeDesktop(12px);
+    font-size: sizeDesktop(16px);
+  }
+
+  &.active {
+    color: $accentColor;
+    background: $mainColor;
+  }
+}

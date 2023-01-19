@@ -1,0 +1,26 @@
+.root {
+  padding: sizeMobile(28px) 0 sizeMobile(108px);
+
+  @include mediaDesktop {
+    padding: sizeDesktop(64px) 0 sizeDesktop(168px);
+  }
+}
+
+.text {
+  font-size: sizeMobile(16px);
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  @include mediaDesktop {
+    font-size: sizeDesktop(16px);
+  }
+
+  & + & {
+    margin-top: sizeMobile(36px);
+
+    @include mediaDesktop {
+      margin-top: sizeDesktop(36px);
+    }
+  }
+}

@@ -1,0 +1,55 @@
+html,
+body,
+body > div {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include fontJapanese;
+  color: $baseColor;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@for $i from 5 through 1 {
+  $duration: 0.6s;
+  $delay: 0.3s;
+
+  .fadeUp-#{$i} {
+    opacity: 0;
+    animation: fadeUp #{$duration} forwards #{$delay * ($i - 1)};
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,45 @@
+.root {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: sizeMobile(243px);
+  padding: sizeMobile(19px) 0;
+  overflow: hidden;
+  font-size: sizeMobile(16px);
+  color: $accentColor;
+  text-align: center;
+  background: $mainColor;
+  border: 1px solid $accentColor;
+  border-radius: 4px;
+  transition: color 0.5s cubic-bezier(0, 0.82, 0.57, 1.01);
+
+  @include mediaDesktop {
+    width: sizeDesktop(243px);
+    padding: sizeDesktop(19px) 0;
+    font-size: sizeDesktop(16px);
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 120%;
+    height: 100%;
+    content: '';
+    background: $accentColor;
+    transition: transform 0.5s cubic-bezier(0, 0.82, 0.57, 1.01);
+    transform: scaleX(0) skewX(-25deg);
+    transform-origin: right top;
+  }
+
+  @include hoverStyle {
+    color: $mainColor;
+
+    &::before {
+      transform: scaleX(1) skewX(-25deg);
+      transform-origin: left top;
+    }
+  }
+}
